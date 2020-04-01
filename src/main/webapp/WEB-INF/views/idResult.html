@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body th:inline="text">
+
+
+
+<p th:text="${product.id}"></p>
+<p th:text="${product.title}"></p>
+<p th:text="${product.cost}"></p>
+
+<br>
+
+
+<form th:action="@{/}">
+    <button type="submit">Back to main</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+<br>
+<br>
+<h1>Welcome to my shop</h1>
+<br>
+<h2>Product</h2>
+<a href="add">add product</a>
+<br>
+<a href="list">show all products</a>
+<br>
+<a href="id">find by id</a>
+<br>
+<a href="deleteById">delete by id</a>
+<br>
+<br>
+<br>
+<br>
+<a href="getProductsByPersonId">find Product By Persons</a>
+<br>
+<!--<tr>-->
+<!--    <th><label>Profile image:</label></th>-->
+<!--    <td><input name="image" type="file"/>-->
+<!--</tr>-->
+
+</body>
+</html>

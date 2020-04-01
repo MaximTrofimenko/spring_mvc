@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>My app</title>
+</head>
+
+<body>
+
+<ul th:each="list : ${list}">
+    <li th:text="${list.title}"></li>
+</ul>
+
+<form th:action="@{/}">
+    <button type="submit">Back to main</button>
+</form>
+</body>
+
+</html>

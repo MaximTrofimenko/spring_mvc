@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/deleteById}" th:object="${product}" method="post">
+    id: <input type="text" th:field="*{id}"/>
+    <br>
+    <button name="deleteProduct" type="submit">Delete product</button>
+</form>
+
+
+<br>
+<form th:action="@{/}">
+    <button type="submit">Back to main</button>
+</form>
+
+</body>
+</html>
